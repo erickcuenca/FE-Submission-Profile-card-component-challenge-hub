@@ -1,0 +1,136 @@
+html {
+    display: grid;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Kumbh Sans', sans-serif;
+    background-color: hsl(185, 75%, 39%);
+    
+}
+.background {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position:fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.upper-background {
+    width: 200%;
+    position: absolute;
+    bottom: 60%;
+    left: -150%;
+}
+[src="./images/bg-pattern-top.svg"] {
+    width: 100%;
+}
+.lower-background {
+    width: 200%;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+}
+[src="./images/bg-pattern-bottom.svg"] {
+    width: 100%;
+}
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+.card {
+    margin-top: 7rem;
+    text-align: center;
+    background-color: white;
+    border-radius: 15px;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    width: 90%;
+    max-width: 400px;
+}
+.banner-info-container {
+    display: grid;
+    grid-template-rows: 1fr 0px 1fr;
+}
+[src="./images/bg-pattern-card.svg"] {
+    width: 100%;
+    border-radius: 15px 15px 0px 0px;
+    height: 100%;
+    object-fit: cover;
+}
+[src="./images/image-victor.jpg"] {
+position: relative;
+bottom: 48px;
+border: 5px solid white;
+border-radius: 50%;
+}
+.user-info {
+    color: hsl(0, 0%, 59%);
+}
+h1 {
+    margin-top: 75px;
+    font-size: 1.25rem;
+    color: hsl(229, 23%, 23%);
+    font-weight: 700;
+}
+h1 > span {
+    color: hsl(0, 0%, 59%);
+    font-weight: 400;
+}
+h2 {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+.stats {
+    border-top: 1px solid hsla(0, 0%, 59%, 0.411);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+}
+.stats-content-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    line-height: 30px;
+    width: 80%;
+}
+p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.25rem;
+    color: hsl(229, 23%, 23%);
+    font-weight: 700;
+}
+p > span {
+    font-size: 1rem;
+    font-weight: 400;
+    color: hsl(0, 0%, 59%);
+}
+.attribution {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    color: hsl(229, 23%, 23%);
+    width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+    .upper-background {
+        width: 100%;
+        position: absolute;
+        bottom: 15%;
+        left: -50%;
+    }
+    .lower-background {
+        width: 75%;
+        position: absolute;
+        top: 49%;
+        left: 45%;
+    }
+}
+
